@@ -13,6 +13,8 @@ class SessionProvider implements ProviderInterface
 {
     /**
      * {@inheritdoc}
+     *
+     * @SuppressWarnings(PHPMD.Superglobals)
      */
     public function get()
     {
