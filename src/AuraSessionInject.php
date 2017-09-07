@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of the Ray.AuraSessionModule package
+ * This file is part of the Ray.AuraSessionModule package.
  *
  * @license http://opensource.org/licenses/MIT MIT
  */
