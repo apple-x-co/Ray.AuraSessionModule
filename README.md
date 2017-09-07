@@ -27,3 +27,31 @@ class AppModule extends AbstractModule
     }
 }
 ```
+
+## Usage
+
+```php
+use Ray\AuraSessionModule\AuraSessionInject;
+
+class Index extends ResourceObject
+{
+    use AuraSessionInject;
+    
+    public function onGet() : ResourceObject
+    {
+        // get a _Segment_ object
+        $segment = $this->session->getSegment('Vendor\Package\ClassName');
+        
+        // try to get a value from the segment;
+        // if it does not exist, return an alternative value
+        echo $segment->get('foo'); // null
+        echo $segment->get('baz', 'not set'); // 'not set'
+    }
+}
+
+```
+
+See more about Aura.Session.
+
+ * http://auraphp.com/framework/2.x/en/session/ (En)
+ * http://auraphp.com/framework/2.x/ja/session/ (Ja)
