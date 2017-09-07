@@ -26,8 +26,3 @@ class AppModule extends AbstractModule
     }
 }
 ```
-
-### Requirements
-
- * PHP 5.5+
- * hhvm
