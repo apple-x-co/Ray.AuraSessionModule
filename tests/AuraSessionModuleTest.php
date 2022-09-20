@@ -7,9 +7,10 @@
 namespace Ray\AuraSessionModule;
 
 use Aura\Session\Session;
+use PHPUnit\Framework\TestCase;
 use Ray\Di\Injector;
 
-class AuraSessionModuleTest extends \PHPUnit_Framework_TestCase
+class AuraSessionModuleTest extends TestCase
 {
     public function testAuraSessionModule()
     {
