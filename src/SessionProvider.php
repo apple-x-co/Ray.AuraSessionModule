@@ -9,6 +9,9 @@ namespace Ray\AuraSessionModule;
 use Aura\Session\SessionFactory;
 use Ray\Di\ProviderInterface;
 
+/**
+ * @deprecated
+ */
 class SessionProvider implements ProviderInterface
 {
     /**
