@@ -19,7 +19,7 @@ use Ray\AuraSessionModule\AuraSessionModule;
 
 class AppModule extends AbstractModule
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this->install(new AuraSessionModule);
     }
@@ -29,16 +29,19 @@ class AppModule extends AbstractModule
 ## Usage
 
 ```php
-use Ray\AuraSessionModule\AuraSessionInject;
+use Aura\Session\Session;
+use MyVendor\MyPackage\MyClass;
 
 class Index extends ResourceObject
 {
-    use AuraSessionInject;
+    public function __construct(
+        private readonly Session $session
+    ) {}
     
-    public function onGet() : ResourceObject
+    public function onGet() : static
     {
         // get a _Segment_ object
-        $segment = $this->session->getSegment('Vendor\Package\ClassName');
+        $segment = $this->session->getSegment(MyClass::class);
         
         // try to get a value from the segment;
         // if it does not exist, return an alternative value
