@@ -1,5 +1,6 @@
 # Ray.AuraSessionModule
 
+[![Continuous Integration](https://github.com/ray-di/Ray.AuraSessionModule/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/ray-di/Ray.AuraSessionModule/actions/workflows/continuous-integration.yml)
 
 
 An [Aura.Session](https://github.com/auraphp/Aura.Session) module for [Ray.Di](https://github.com/ray-di/Ray.Di).
