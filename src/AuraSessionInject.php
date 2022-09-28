@@ -1,23 +1,20 @@
 <?php
-/**
- * This file is part of the Ray.AuraSessionModule package.
- *
- * @license http://opensource.org/licenses/MIT MIT
- */
+
+declare(strict_types=1);
+
 namespace Ray\AuraSessionModule;
 
 use Aura\Session\Session;
 
+/**
+ * @deprecated Use PHP 8.0: Class constructor property promotion instead
+ */
 trait AuraSessionInject
 {
-    /**
-     * @var Session
-     */
+    /** @var Session */
     protected $session;
 
     /**
-     * @param Session $session
-     *
      * @\Ray\Di\Di\Inject
      */
     public function setSession(Session $session)
